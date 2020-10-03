@@ -31,3 +31,5 @@ class CandidateRegistered extends CandidateState {
   @override
   List<Object> get props => [candidate];
 }
+
+class CandidateRegistrationFailure extends CandidateState {}

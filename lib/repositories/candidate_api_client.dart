@@ -24,7 +24,7 @@ class CandidateApiClient {
           "phone": candidate.phone,
           "email": candidate.email
         }),
-        );
+      );
 
     print(candidateResponse);
 

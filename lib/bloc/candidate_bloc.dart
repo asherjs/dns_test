@@ -40,9 +40,11 @@ class CandidateBloc extends Bloc<CandidateEvent, CandidateState> {
     yield CandidateRegistering();
     try {
       final bool isRegistered = await candidateRepository.register(event.candidate);
-      yield CandidateRegistered(candidate: event.candidate);
+      if (isRegistered) {
+        yield CandidateRegistered(candidate: event.candidate);
+      }
     } catch (_) {
-      yield CandidateTokenRecieveFailure();
+      yield CandidateRegistrationFailure();
     }
   }
 }

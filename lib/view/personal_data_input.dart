@@ -1,7 +1,7 @@
 import 'package:dns_test/bloc/candidate_bloc.dart';
 import 'package:dns_test/models/candidate.dart';
 import 'package:dns_test/repositories/candidate_repository.dart';
-import 'package:dns_test/view/register.dart';
+import 'package:dns_test/view/registration.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
